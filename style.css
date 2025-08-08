@@ -32,8 +32,8 @@ h1
 .hc
 {
     background:linear-gradient(to bottom, #fae5ffda, #00aaffa3, #9d0aa27a);
-    height: 800px;
-    width:700px;  
+    height: 840px;
+    width:740px;  
     display: grid;
     gap:5px;
     grid-template-rows : repeat(6,1fr);
