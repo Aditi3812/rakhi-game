@@ -69,7 +69,7 @@ $("body").keydown(function (event) {
         if(a===m&&c===n){
         var cat= new Audio('./audio/win.mp3');
         cat.play();
-        $("h1").text("YOU WON ㄟ(≧◇≦)ㄏ!!!").addClass("pit");
+        $("h1").text("YOU GOT YOUR RAKHI ㄟ(≧◇≦)ㄏ!!!").addClass("pit");
         $("#tb").append("<div class='ntm'></div>")
         return; 
     }
