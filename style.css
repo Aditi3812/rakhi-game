@@ -10,10 +10,22 @@ html, body {
     padding-top: 20px;
     align-items: center;
     background-image: url("./images/Screenshot\ 2025-04-01\ 171507.png");
+    background-attachment: fixed;
     padding-top:10px;
     padding-bottom: 10px;
+    gap:30px;
     
-    
+}
+.inst
+{
+    color: #2e043a;
+    border: 2px dotted ;
+    padding:8px;
+}
+h3
+{
+    text-decoration: underline;
+    font-size: 24px;
 }
 h1
 {
