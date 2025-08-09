@@ -4,8 +4,12 @@ var c = parseInt($(".obs4m").css("grid-row-start"));
 var d = parseInt($(".obs4m").css("grid-row-end"));
 
 var m = parseInt($(".obs5r").css("grid-column-start"));
-var n = parseInt($(".obs5r").css("grid-row-start"));
 
+var n = parseInt($(".obs5r").css("grid-row-start"));
+alert("How to play? Press Enter for instructions!");
+alert("Use ArrowUp to move up. ArrowDown to move down. ArrowLeft to move left. ArrowRight to move Right. Press Enter");
+alert("A game to fetch the rakhi. While you can enjoy the beautiful landscapes, you are not allowed to enter them! Lets Begin. Press Enter");
+var yt;
 var yt;
 $("body").keydown(function (event) {
     let nextA = a;
@@ -34,11 +38,19 @@ $("body").keydown(function (event) {
         yt = new Audio('./audio/game-click.mp3')
         yt.play();
     } else if (event.key === "ArrowLeft") {
+        if(a===1)
+        {
+            return;
+        }
         nextA -= 1;
         nextB -= 1;
         yt = new Audio('./audio/game-click.mp3')
         yt.play();
     } else if (event.key === "ArrowRight") {
+         if(b===7)
+        {
+            return;
+        }
         nextA += 1;
         nextB += 1;
         yt = new Audio('./audio/game-click.mp3')
