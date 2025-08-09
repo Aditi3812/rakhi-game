@@ -13,6 +13,10 @@ $("body").keydown(function (event) {
     let nextB = b;
     let nextC = c;
     let nextD = d;
+    if(event.key==="Enter")
+    {
+        $("#im").remove();
+    }
     if(a===m&&c===n){
         return;
     }
