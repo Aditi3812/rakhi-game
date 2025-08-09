@@ -16,11 +16,19 @@ $("body").keydown(function (event) {
         return;
     }
      if (event.key === "ArrowUp") {
+         if(c===1)
+        {
+            return;
+        }
         nextC -= 1;
         nextD -= 1;
         yt = new Audio('./audio/game-click.mp3')
         yt.play();
     } else if (event.key === "ArrowDown") {
+         if(d===7)
+        {
+            return;
+        }
         nextC += 1;
         nextD += 1;
         yt = new Audio('./audio/game-click.mp3')
