@@ -5,10 +5,7 @@ var d = parseInt($(".obs4m").css("grid-row-end"));
 
 var m = parseInt($(".obs5r").css("grid-column-start"));
 
-var n = parseInt($(".obs5r").css("grid-row-start"));
-alert("How to play? Press Enter for instructions!");
-alert("Use ArrowUp to move up. ArrowDown to move down. ArrowLeft to move left. ArrowRight to move Right. Press Enter");
-alert("A game to fetch the rakhi. While you can enjoy the beautiful landscapes, you are not allowed to enter them! Lets Begin. Press Enter");
+var n = parseInt($(".obs5r").css("grid-row-start")); 
 var yt;
 var yt;
 $("body").keydown(function (event) {
@@ -22,6 +19,8 @@ $("body").keydown(function (event) {
      if (event.key === "ArrowUp") {
          if(c===1)
         {
+            var tat= new Audio('./audio/negat.mp3');
+            tat.play();
             return;
         }
         nextC -= 1;
@@ -31,6 +30,8 @@ $("body").keydown(function (event) {
     } else if (event.key === "ArrowDown") {
          if(d===7)
         {
+            var tat= new Audio('./audio/negat.mp3');
+            tat.play();
             return;
         }
         nextC += 1;
@@ -40,6 +41,8 @@ $("body").keydown(function (event) {
     } else if (event.key === "ArrowLeft") {
         if(a===1)
         {
+            var tat= new Audio('./audio/negat.mp3');
+            tat.play();
             return;
         }
         nextA -= 1;
@@ -49,6 +52,8 @@ $("body").keydown(function (event) {
     } else if (event.key === "ArrowRight") {
          if(b===7)
         {
+            var tat= new Audio('./audio/negat.mp3');
+            tat.play();
             return;
         }
         nextA += 1;
